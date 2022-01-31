@@ -1,0 +1,44 @@
+ <!--
+Copyright (c) 2018 ml5
+
+This software is released under the MIT License.
+https://opensource.org/licenses/MIT
+-->
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body onresize="windowResized()">
+  <!-- 
+  <a href="https://aizoo.com"><img src="https://fillyourplate.org/blog/wp-content/uploads/2015/07/bigstock-Head-of-funny-cow-looking-to-a-48484160-418x512.jpg" height="60px"></a>
+  -->
+  <h1 class='title'>Object Tracking Demo </h1>
+  <div id="container">
+      <video id="input-video" src="" type="video/mp4" width=640 controls>
+	    Your browser doesn't support the HTML5 Video element.
+      </video>
+      <!-- <img src="images/demo.jpg" id="image" class="center"> -->
+    <div id="text-container">
+      <p id="instruction" class="green-color">
+      <button id="uploader-btn" onClick="clickUploader()">Upload or drag a video there.</button>
+
+      <p id="warning" class="result-color"></p>
+      <p id="output-message" class="result-color">
+        The result is:
+      </p>
+      <input name="videoFile" type="file" id="fileUploader" accept="video/*" onChange="handleFiles()">
+    </div>
+    <!-- <canvas id="canvas"></canvas>  -->
+    <div id="video-container" style="display: none" >
+      <video id="output-video" src="output.mp4" type="video/mp4" width=640 controls>
+	    Your browser doesn't support the HTML5 Video element.
+      </video>
+    </div>
+  </div>
+  <script src="../js/tracking_index.js"></script>
+</body>
+</html>
